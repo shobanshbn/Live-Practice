@@ -1,5 +1,10 @@
-body{
-    font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+:root{
+  --orange-color: #DA722C;
+  --dark-blue-color: #023047;
+  --light-blue-color: #6F7DFB;
+  --dark-color: #070917;
+  --light-color: #E8F7FB;
+  --blue-color: #057ADA;
+  }
+
+  
