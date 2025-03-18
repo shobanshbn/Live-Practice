@@ -1,3 +1,5 @@
+/* root color */
+
 :root{
   --orange-color: #DA722C;
   --dark-blue-color: #023047;
@@ -7,4 +9,49 @@
   --blue-color: #057ADA;
   }
 
-  
+/* base styling */
+
+*,
+*::before;
+*::after{
+  box-sizing: border-box;
+  }
+
+  body{
+    margin: 0;
+    font-family: "poppins", sans-serif;
+  }
+
+  .wrapper{
+    max-width: 1134px;
+    margin: o auto;
+  }
+
+  /* button stylling */
+  .btn{
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative
+  }
+
+  .btn.dark{
+    background: var(--dark-blue-color);
+  }
+  .btn.light{
+    background: var(--orange-color);
+  }
+  .btn.enrol-icon::before{
+    content: url(Assets/PencilAlt.svg);
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+  }
+  .btn.btn.enrol-icon{
+    padding-left: 60px;
+  }
